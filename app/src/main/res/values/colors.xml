@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightGray">#535865</color>
+    <color name="darkGray">#313541</color>
+    <color name="gray1">#929292</color>
+    <color name="gra2">#596367</color>
+    <color name="gray3">#55606f</color>
+    <color name="skyBlueDark">#4acef5</color>
+    <color name="skyBlueLight">#95d2e0</color>
+    <color name="lineColor1">#c0c0c0</color>
+    <color name="red">#d35062</color>
+    <color name="blue1">#ebf6fc</color>
+    <color name="buttoncolor">#f8fefe</color>
+</resources>

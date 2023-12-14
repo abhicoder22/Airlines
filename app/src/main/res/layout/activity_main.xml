@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue1"
+    tools:context=".MainActivity"
+    android:elevation="5dp">
+
+
+
+
+        <TextView
+            android:id="@+id/loggo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kuwait Intl"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/lightGray"
+            android:layout_marginTop="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/planeLogo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/loggo"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/plane"
+            app:tint="@color/skyBlueDark" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/planeLogo"
+            android:layout_centerHorizontal="true"
+            android:text="King Abdulaziz International Airport"
+            android:textStyle="bold"
+            android:textColor="@color/lightGray"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightGray"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/name"/>
+
+
+        <ImageView
+            android:id="@+id/logoutBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/back"
+            app:tint="@color/lightGray" />
+
+        <LinearLayout
+            android:id="@+id/toplayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="2"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/line"
+            android:layout_marginEnd="10dp">
+
+            <ImageView
+                android:id="@+id/seat_img"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/userone" />
+
+            <TextView
+                android:id="@+id/seat_available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="1"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:id="@+id/luggage_img"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/seat" />
+
+            <TextView
+                android:id="@+id/luggage_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="Economy"
+                android:textSize="10sp"/>
+
+            <ImageView
+                android:id="@+id/flight_img"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/calendar" />
+
+            <TextView
+                android:id="@+id/flight_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 Dec 2023"
+                android:textSize="10sp"/>
+
+            <ImageView
+
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="60dp"
+                android:src="@drawable/editing" />
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toplayout"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:padding="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="90dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="25dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/buttoncolor"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/sort"
+                        android:layout_margin="8dp"
+                        android:contentDescription="@null"
+                        app:tint="@color/lightGray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sort By"
+                        android:textStyle="bold"
+                        android:textColor="@color/lightGray"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="90dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="25dp"
+                app:cardBackgroundColor="@color/buttoncolor"
+                android:background="@color/buttoncolor"
+                android:layout_margin="5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/filter"
+                        android:layout_margin="8dp"
+                        android:contentDescription="@null"
+                        app:tint="@color/lightGray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Filter"
+                        android:textStyle="bold"
+                        android:textColor="@color/lightGray"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/flight_pic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/nilelogo"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="-15dp"
+                />
+
+            <LinearLayout
+                android:layout_below="@id/flight_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:id="@+id/layout1"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/arrival_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18:30"
+                        android:textColor="@color/lightGray"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textAlignment="viewStart"
+                        />
+
+                    <TextView
+                        android:id="@+id/flight_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saudi Arabian Airlines"
+                        android:textStyle="bold"
+                        android:textColor="@color/darkGray"
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:id="@+id/reach_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18:30"
+                        android:textColor="@color/lightGray"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textAlignment="viewEnd"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/origin_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:text="kwi"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="@color/lightGray"
+                        android:layout_weight="1"
+                        android:textAlignment="viewStart"
+                        />
+
+                    <include
+                        layout="@layout/line_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+
+                    <TextView
+                        android:id="@+id/time_taken"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:text="5h 47min"
+                        android:textColor="@color/gray1"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:textAlignment="center"/>
+
+                    <include
+                        layout="@layout/line_stop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/destination_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:text="Jed"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="@color/lightGray"
+                        android:layout_weight="1"
+                        android:textAlignment="viewEnd"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/origin_airport_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:text="Kuwait Intl"
+                        android:textColor="@color/gra2"
+                        android:layout_weight="1"
+                        android:textSize="10sp"
+                        android:textAlignment="viewStart"/>
+
+                    <TextView
+                        android:id="@+id/dest_airport_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:textColor="@color/gra2"
+                        android:text="King Abdulaziz International Airport"
+                        android:layout_weight="1"
+                        android:textSize="10sp"
+                        android:textAlignment="viewEnd"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+                <include layout="@layout/line_layout"
+                    android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout1" />
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/layout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout1"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="8dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/seat_img"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="5dp"
+                            android:src="@drawable/seat" />
+
+                        <TextView
+                            android:id="@+id/seat_available"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:text="9"
+                            android:textSize="10sp"/>
+
+                        <ImageView
+                            android:id="@+id/luggage_img"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="5dp"
+                            android:src="@drawable/suitcase" />
+
+                        <TextView
+                            android:id="@+id/luggage_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:text="30"
+                            android:textSize="10sp"/>
+
+                        <TextView
+                            android:id="@+id/luggage_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:text="KG/person"
+                            android:textSize="10sp"/>
+
+                        <ImageView
+                            android:id="@+id/flight_img"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginEnd="5dp"
+                            android:src="@drawable/aeroplane" />
+
+                        <TextView
+                            android:id="@+id/flight_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NP-162"
+                            android:textSize="10sp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/flight_appe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="42 KWD"
+                            android:textAlignment="center"
+                            android:textColor="@color/gray3"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/coin_img"
+                                android:layout_width="13dp"
+                                android:layout_height="13dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/coin"
+                                />
+
+                            <TextView
+                                android:id="@+id/get_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:text="Get"
+                                android:textColor="@color/skyBlueLight"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/points_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="83.3"
+                                android:textColor="@color/skyBlueDark"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/points_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="points"
+                                android:textColor="@color/skyBlueLight"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+</FrameLayout>
